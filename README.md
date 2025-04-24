@@ -38,7 +38,7 @@ Used Sguil and Kibana to identify alerts within the time window of 2018-07-05 16
 ### 2. Identifying Infected Host
 Pinpointed the infected machine using IP `10.7.5.101`. Verified MAC address and NIC vendor using NetworkMiner. Established that infection likely came via a phishing-based PDF exploit.
 
-![Host Details](images/infected-host.png)
+![Host Details](ss/host.png)
 > **Figure 3:** Infected host and network identity details.
 
 ---
@@ -46,27 +46,56 @@ Pinpointed the infected machine using IP `10.7.5.101`. Verified MAC address and 
 ### 3. Tracking Downloaded Payloads
 Observed HTTP GET requests for malicious files: `Toler.png`, `Table.png`, and `RelayMTA40.bin`. Traced domains and IPs involved.
 
-![Payload Downloads](images/malware-downloads.png)
-> **Figure 4:** Downloaded malware payloads and command-and-control infrastructure.
+![Payload Downloads](ss/toler_file.png)
+> **Figure 4:** Downloaded malware payloads and command-and-control infrastructure Toler.PNG.
+
+
+![Payload Downloads](ss/table_file.png)
+> **Figure 5:** Downloaded malware payloads and command-and-control infrastructure Table.png.
+
+
+![Payload Downloads](ss/relay_file.png)
+> **Figure 6:** Downloaded malware payloads and command-and-control infrastructure RelayMTA40.bin.
 
 ---
 
 ### 4. Verifying File Hashes with VirusTotal
 Extracted SHA256 hashes and submitted to VirusTotal. Confirmed each file was malicious with detailed community and vendor reports.
 
-![VirusTotal Analysis](images/virustotal-results.png)
-> **Figure 5:** Threat intelligence report of malicious files via VirusTotal.
+![VirusTotal Analysis](ss/toler_virustotal.png)
+> **Figure 7:** Threat intelligence report of Toler.png via VirusTotal.
+
+
+
+![VirusTotal Analysis](ss/table_virustotal.png)
+> **Figure 8:** Threat intelligence report of Table.png via VirusTotal.
+
+
+
+![VirusTotal Analysis](ss/relay_virustotal.png)
+> **Figure 9:** Threat intelligence report of RelayMTA40.bin via VirusTotal.
+
 
 ---
 
 ### 5. Reporting Findings
 Documented a full infection lifecycle: from phishing to execution, C2 beaconing, and exfiltration. Noted hidden indicators and possible persistence mechanisms (e.g., hidden IPs, certificate abuse).
 
-![Final Summary](images/final-report.png)
-> **Figure 6:** Compiled findings and incident report for internal review.
+![Final Summary](ss/hidden_IP.png)
+> **Figure 10:** Hidden IP.
+
+
+
+![Final Summary](ss/widgits_file.png)
+> **Figure 11:** Suspicious Certificate.
+
+
+
+![Final Summary](ss/widgit_virustotal.png)
+> **Figure 12:** Certificate virutotal result.
+
+
 
 ---
 
 > _"Analyzing adversary footprints to strengthen digital defense."_
-
----
