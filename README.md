@@ -1,6 +1,5 @@
 # TrickBot Malware Analysis - Cisco CyberOps Final Skills Assessment
 
-## Scenario
 For the final assesment of instrutor lead Cisco Cyberops Assoicate, I was tasked with investigating a potential malware infection within a simulated enterprise network. An alert indicated suspicious activity tied to the TrickBot trojan — a well-known multi-stage malware associated with credential theft, ransomware, and command-and-control (C2) operations.
 
 My role was to analyze the timeline of the attack using tools like Sguil, Kibana, and VirusTotal. The investigation involved identifying infected hosts, isolating malicious files, extracting IOC (Indicators of Compromise) data, and tracing external communication with attacker-controlled infrastructure. Through this process, I discovered multiple stages of infection, including reconnaissance, privilege escalation, and data exfiltration, revealing a full-scale compromise originating from a phishing-based PDF delivery.
