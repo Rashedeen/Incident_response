@@ -1,4 +1,4 @@
-# TrickBot Malware Analysis - Cisco CyberOps Final Skills Assessment
+# Incident Response - Cisco CyberOps Final Skills Assessment
 
 For the final assesment of instrutor lead Cisco Cyberops Assoicate, I was tasked with investigating a potential malware infection within a simulated enterprise network. An alert indicated suspicious activity tied to the TrickBot trojan — a well-known multi-stage malware associated with credential theft, ransomware, and command-and-control (C2) operations.
 
