@@ -5,7 +5,6 @@ For the final assesment of instrutor lead Cisco Cyberops Assoicate, I was tasked
 
 My role was to analyze the timeline of the attack using tools like Sguil, Kibana, and VirusTotal. The investigation involved identifying infected hosts, isolating malicious files, extracting IOC (Indicators of Compromise) data, and tracing external communication with attacker-controlled infrastructure. Through this process, I discovered multiple stages of infection, including reconnaissance, privilege escalation, and data exfiltration, revealing a full-scale compromise originating from a phishing-based PDF delivery.
 
-> 📄 [Download Full Report (PDF)](docs/TrickBot-Malware-Analysis.pdf)
 
 ## Project Highlights
 - Investigated malware behavior using Security Onion tools.
