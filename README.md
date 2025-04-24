@@ -30,8 +30,8 @@ My role was to analyze the timeline of the attack using tools like Sguil, Kibana
 ### 1. Analyzing Alerts in Sguil & Kibana
 Used Sguil and Kibana to identify alerts within the time window of 2018-07-05 16:12 to 18:39 UTC. Recorded alert types, source and destination IPs, and payload indicators.
 
-![Sguil Alerts](images/sguil-alerts.png)
-> **Figure 2:** Analysis of event alerts tied to TrickBot infection timeline.
+![Sguil Alerts](ss/alerts.png)
+> **Figure 1:** Analysis of event alerts tied to TrickBot infection timeline.
 
 ---
 
