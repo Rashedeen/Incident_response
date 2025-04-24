@@ -27,15 +27,7 @@ My role was to analyze the timeline of the attack using tools like Sguil, Kibana
 
 ## Project Steps
 
-### 1. Verifying Services on Security Onion
-Logged into the Security Onion virtual machine and used `sudo so-status` to ensure all required services were active before proceeding with log analysis.
-
-![SO Status Check](images/security-onion-status.png)
-> **Figure 1:** Verified Security Onion services were running and ready for analysis.
-
----
-
-### 2. Analyzing Alerts in Sguil & Kibana
+### 1. Analyzing Alerts in Sguil & Kibana
 Used Sguil and Kibana to identify alerts within the time window of 2018-07-05 16:12 to 18:39 UTC. Recorded alert types, source and destination IPs, and payload indicators.
 
 ![Sguil Alerts](images/sguil-alerts.png)
@@ -43,7 +35,7 @@ Used Sguil and Kibana to identify alerts within the time window of 2018-07-05 16
 
 ---
 
-### 3. Identifying Infected Host
+### 2. Identifying Infected Host
 Pinpointed the infected machine using IP `10.7.5.101`. Verified MAC address and NIC vendor using NetworkMiner. Established that infection likely came via a phishing-based PDF exploit.
 
 ![Host Details](images/infected-host.png)
@@ -51,7 +43,7 @@ Pinpointed the infected machine using IP `10.7.5.101`. Verified MAC address and 
 
 ---
 
-### 4. Tracking Downloaded Payloads
+### 3. Tracking Downloaded Payloads
 Observed HTTP GET requests for malicious files: `Toler.png`, `Table.png`, and `RelayMTA40.bin`. Traced domains and IPs involved.
 
 ![Payload Downloads](images/malware-downloads.png)
@@ -59,7 +51,7 @@ Observed HTTP GET requests for malicious files: `Toler.png`, `Table.png`, and `R
 
 ---
 
-### 5. Verifying File Hashes with VirusTotal
+### 4. Verifying File Hashes with VirusTotal
 Extracted SHA256 hashes and submitted to VirusTotal. Confirmed each file was malicious with detailed community and vendor reports.
 
 ![VirusTotal Analysis](images/virustotal-results.png)
@@ -67,7 +59,7 @@ Extracted SHA256 hashes and submitted to VirusTotal. Confirmed each file was mal
 
 ---
 
-### 6. Reporting Findings
+### 5. Reporting Findings
 Documented a full infection lifecycle: from phishing to execution, C2 beaconing, and exfiltration. Noted hidden indicators and possible persistence mechanisms (e.g., hidden IPs, certificate abuse).
 
 ![Final Summary](images/final-report.png)
